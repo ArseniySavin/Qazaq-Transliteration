@@ -4,7 +4,7 @@ So if you using MT message for banking operation or Posting messages for compani
 
 <h2>Most popular translated</h2>
 <b>Cyrillic-Qazaq</b> - This is translate used everywhere and every bank of country. Here used unicode 1251.<br/>
-<b>Qazaq-Aparat</b> - Sometimes national bank uses this translate. Here used unicode utf-8.
+<b>Qazaq-Aqparat</b> - Sometimes national bank uses this translate. Here used unicode utf-8.
 
 <h1>How to use</h1>
 
