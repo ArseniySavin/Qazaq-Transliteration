@@ -20,5 +20,32 @@ So if you using MT message for banking operation or Posting messages for compani
 <li>Add reference on assembly.</li>
 <li>Call static class InitializationDictionary var exString = InitializationDictionary.ConvertTo("SomeKazakhText", EnumTransliteType, EnumDirectionType);</li>
 </ol>
+
+With new version. Can add it as [nuget package](https://www.nuget.org/packages/Translate_KZ/1.0.0).
+
+How to use new version:
+You can add custome dictionary. Create new json file. Using for this template
+````json
+{
+    "name": "<your name dictionary>", // for example CyrillicQazaq
+    "title": "---",                   // description
+    "dict_type": "dict",              // constant value
+    "dict": {                         // dictionary
+        "Key": "Value",
+        ...
+    }
+}
+````
+Save file in your directory. And call method ConvertTo using example.
+````C#
+var parhPatForDict = "<exemple path for dict directory>"
+
+var test = new TranslateKz(parhPatForDict, "CyrillicQazaq");
+
+var res = test.ConvertTo("НҰРЛЫ ЖОЛ - БОЛАШАҚҚА БАСТАР ЖОЛ", DirectionType.OnKaz);
+  
+````
+result: "НЎРЛЫ ЖОЛ - БОЛАШАЌЌА БАСТАР ЖОЛ"
+
 <hr/>
 *This app is overdue for Kazakhstan!
