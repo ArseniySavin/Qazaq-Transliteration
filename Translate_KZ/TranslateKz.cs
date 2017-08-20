@@ -55,17 +55,17 @@ namespace Translate_KZ
                 if (!_dict.Exists(m => m.name == _dictName))
                     throw new KeyNotFoundException($"Dicrtionary {_dictName} not fount in collection");
 
-                Dictionary<string, string> dict = _dict.FirstOrDefault(m => m.name == _dictName + "1").dict;
+                Dictionary<string, string> dict = _dict.FirstOrDefault(m => m.name == _dictName).dict;
 
-                foreach (KeyValuePair<string, string> key in dict)
+                for (int i = 0; i < dict.Count; i++)
                 {
                     if (direction == DirectionType.OnKaz)
                     {
-                        _translateString = _translateString.Replace(key.Key, key.Value);
+                        _translateString = _translateString.Replace(dict.ElementAt(i).Key, dict.ElementAt(i).Value);
                     }
                     else if (direction == DirectionType.OutKaz)
                     {
-                        _translateString = _translateString.Replace(key.Value, key.Key);
+                        _translateString = _translateString.Replace(dict.ElementAt(i).Value, dict.ElementAt(i).Key);
                     }
                 }
             }

@@ -1,5 +1,8 @@
 ﻿{
+    "name": "test",
     "title": "---",
     "dict_type": "dict",
-    "dict": {}
+    "dict": {
+        "A": "a"
+    }
 }

@@ -56,6 +56,7 @@
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="Test_BigText.txt" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Translate_KZ\Translate_KZ.csproj">

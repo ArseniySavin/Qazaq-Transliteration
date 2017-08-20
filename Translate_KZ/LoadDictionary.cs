@@ -30,9 +30,9 @@ namespace Translate_KZ
 
                 var filesCollection = Directory.GetFiles(pathForDict, "*.json");
 
-                foreach (var item in filesCollection)
+                for (int i = 0; i < filesCollection.Length; i++)
                 {
-                    stringsJson.Add(File.ReadAllText(item));
+                    stringsJson.Add(File.ReadAllText(filesCollection[i]));
                 }
 
             }
@@ -54,9 +54,9 @@ namespace Translate_KZ
 
             try
             {
-                foreach (var item in stringsJson)
+                for (int i = 0; i < stringsJson.Count; i++)
                 {
-                    DictionaryModel dictModel = item.FromJson<DictionaryModel>();
+                    DictionaryModel dictModel = stringsJson[i].FromJson<DictionaryModel>();
 
                     if (dictModel.dict_type == "dict")
                     {
