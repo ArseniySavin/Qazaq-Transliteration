@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>Translate_KZ</id>
+    <version>1.0</version>
+    <title>This app can help to translate kazakh words on latin.</title>
+    <authors>Arseniy Savin</authors>
+    <owners>Arseniy Savin</owners>
+    <projectUrl>https://github.com/ArseniySavin/Qazaq-Transliteration</projectUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>So if you using MT message for banking operation or Posting messages for companies. You can send transliteration message on QAZAQ your partners.</description>
+    <releaseNotes></releaseNotes>
+    <copyright>Copyright 2017</copyright>
+    <tags>Translate translate KZ Qazaq qazaq Convert convert</tags>
+    <dependencies>
+      <dependency id="TinyJson" version="0.9.1" />
+    </dependencies>
+  </metadata>
+</package>
