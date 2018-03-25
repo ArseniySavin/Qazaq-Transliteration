@@ -10,6 +10,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Dictionary", "Dictionary", "{50E35AA2-6F41-4E4C-A8AF-846DB49E95D3}"
 	ProjectSection(SolutionItems) = preProject
 		Dictionary\CyrillicQazaq.json = Dictionary\CyrillicQazaq.json
+		Dictionary\GOST-569.json = Dictionary\GOST-569.json
 		Dictionary\QazaqAqparat.json = Dictionary\QazaqAqparat.json
 		Dictionary\Test.json = Dictionary\Test.json
 		Dictionary\Test2.json = Dictionary\Test2.json
