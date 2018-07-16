@@ -52,4 +52,11 @@
     <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>copy $(SolutionDir)\Dictionary\GOST-569.json $(TargetDir)\GOST-569.json</PostBuildEvent>
+  </PropertyGroup>
 </Project>
